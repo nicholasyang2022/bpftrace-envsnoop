@@ -1,0 +1,27 @@
+#!/usr/bin/env bpftrace
+// trace environment variable changes
+
+BEGIN
+{
+	printf("%-15s %-7s %-7s %s\n", "TIME", "PID", "COMM", "ENV");
+}
+
+uprobe:libc:setenv
+{
+	printf("%15s %-7d %-7s %s=%s\n", strftime("%H:%M:%S.%f", nsecs), pid, comm, str(arg0), str(arg1));
+}
+
+uprobe:libc:putenv
+{
+	printf("%15s %-7d %-7s %s\n", strftime("%H:%M:%S.%f", nsecs), pid, comm, str(arg0));
+}
+
+uprobe:libc:unsetenv
+{
+	printf("%15s %-7d %-7s unset %s\n", strftime("%H:%M:%S.%f", nsecs), pid, comm, str(arg0));
+}
+
+uprobe:libc:clearenv
+{
+	printf("%15s %-7d %-7s clear\n", strftime("%H:%M:%S.%f", nsecs), pid, comm);
+}

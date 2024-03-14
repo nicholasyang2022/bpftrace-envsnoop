@@ -1,0 +1,55 @@
+Trace environment variable changes:
+
+# ./envsnoop.bt
+Attaching 5 probes...
+TIME            PID     COMM    ENV
+14:57:01.610905 67948   zsh     SHLVL=1
+14:57:01.610917 67948   zsh     PWD=/home/nicholas
+14:57:01.610918 67948   zsh     OLDPWD=/home/nicholas
+14:57:01.612927 67951   zsh     GIO_USE_VFS=local
+14:57:01.612950 67951   zsh     _=/usr/bin/flatpak
+14:57:01.621665 67948   zsh     XDG_DATA_DIRS=/home/nicholas/.local/share/flatpak/exports/share:/var/lib/flat..
+14:57:01.621995 67953   zsh     _=/usr/bin/tty
+14:57:01.622577 67948   zsh     LANG=en_US.UTF-8
+14:57:01.622791 67948   zsh     EDITOR=nvim
+14:57:01.622815 67948   zsh     PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/var/lib/flatpak/export..
+14:57:01.622820 67948   zsh     EDITOR=nvim
+14:57:01.622824 67948   zsh     LESS=-FR
+14:57:01.622844 67948   zsh     ZSH=/home/nicholas/.oh-my-zsh
+14:57:01.625077 67955   zsh     _=/usr/bin/mkdir
+14:57:01.625986 67956   zsh     _=/usr/bin/git
+14:57:01.626595 67956   git     GIT_EXEC_PATH=/usr/lib/git-core
+14:57:01.626605 67956   git     PATH=/usr/lib/git-core:/usr/local/bin:/usr/bin:/usr/local/sbin:/var/..
+14:57:01.627777 67958   zsh     _=/usr/bin/mkdir
+14:57:01.629131 67960   zsh     _=/usr/bin/rm
+14:57:01.630099 67961   zsh     PWD=/home/nicholas/.oh-my-zsh
+14:57:01.630113 67961   zsh     OLDPWD=/home/nicholas
+14:57:01.630141 67961   zsh     _=/usr/bin/git
+14:57:01.630740 67961   git     GIT_EXEC_PATH=/usr/lib/git-core
+14:57:01.630750 67961   git     PATH=/usr/lib/git-core:/usr/local/bin:/usr/bin:/usr/local/sbin:/var/..
+14:57:01.630797 67961   git     GIT_PREFIX=
+14:57:01.631294 67962   zsh     _=/usr/bin/grep
+14:57:01.632916 67963   zsh     _=/usr/bin/grep
+14:57:01.641314 67967   zsh     _=/usr/bin/grep
+14:57:01.643425 67968   zsh     _=/usr/bin/mkdir
+14:57:01.644877 67971   zsh     _=/usr/bin/wc
+14:57:01.645928 67972   zsh     _=/usr/bin/rm
+14:57:01.650811 67948   zsh     PAGER=less
+14:57:01.652662 67973   zsh     _=/usr/bin/diff
+14:57:01.653315 67948   zsh     LSCOLORS=Gxfxcxdxbxegedabagacad
+14:57:01.653602 67974   zsh     _=/usr/bin/dircolors
+14:57:01.654830 67948   zsh     LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;3..
+14:57:01.655275 67975   zsh     _=/usr/bin/ls
+14:57:01.657015 67976   zsh     _=/usr/bin/git
+14:57:01.657713 67976   git     GIT_EXEC_PATH=/usr/lib/git-core
+14:57:01.657727 67976   git     PATH=/usr/lib/git-core:/usr/local/bin:/usr/bin:/usr/local/sbin:/var/..
+14:57:01.659932 67977   zsh     _=/usr/bin/starship
+14:57:01.663729 67986   zsh     _=/usr/lib/vte-urlencode-cwd
+14:57:01.664809 67987   zsh     LC_ALL=C
+14:57:01.664887 67987   zsh     unset LC_ALL
+14:57:01.665535 67988   zsh     LC_ALL=C
+14:57:01.665650 67988   zsh     unset LC_ALL
+14:57:01.666530 67990   zsh     GIT_OPTIONAL_LOCKS=0
+14:57:01.666564 67990   zsh     _=/usr/bin/git
+14:57:01.667283 67990   git     GIT_EXEC_PATH=/usr/lib/git-core
+14:57:01.667295 67990   git     PATH=/usr/lib/git-core:/usr/local/bin:/usr/bin:/usr/local/sbin:/var/..
